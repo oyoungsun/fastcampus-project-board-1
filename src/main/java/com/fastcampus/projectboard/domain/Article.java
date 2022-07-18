@@ -34,7 +34,7 @@ public class Article extends AuditingFields {
     @Setter @Column(nullable = false, length = 10000) private String content;  //  본문
 
     @Setter private String hashtag;  // 해시태그
-    
+
     @OrderBy("id")
     @ToString.Exclude
     @OneToMany(mappedBy = "article", cascade = CascadeType.ALL)
