@@ -20,6 +20,7 @@ public interface ArticleCommentRepository extends
 
     //underbar를 쓰게되면 Article 객체 안으로 들어가 id로 조회
     List<ArticleComment> findByArticle_Id(Long articleId);  //게시글로 댓글을 검색
+    void deleteByIdAndUserAccount_UserId(Long articleCommentId, String userId);
 
     @Override
     default void customize(QuerydslBindings bindings, QArticleComment root) {
