@@ -24,7 +24,6 @@ public class ArticleCommentController {
             ArticleCommentRequest articleCommentRequest
     ) {
         articleCommentService.saveArticleComment(articleCommentRequest.toDto(boardPrincipal.toDto()));
-
         return "redirect:/articles/" + articleCommentRequest.articleId();
     }
 

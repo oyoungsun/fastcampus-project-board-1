@@ -6,9 +6,10 @@ import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport
 
 import java.util.List;
 
-public class HashtagRepositoryCustomImpl extends QuerydslRepositorySupport implements HashtagRepositoryCustom{
 
-    public HashtagRepositoryCustomImpl(){
+public class HashtagRepositoryCustomImpl extends QuerydslRepositorySupport implements HashtagRepositoryCustom {
+
+    public HashtagRepositoryCustomImpl() {
         super(Hashtag.class);
     }
 
@@ -20,4 +21,5 @@ public class HashtagRepositoryCustomImpl extends QuerydslRepositorySupport imple
                 .select(hashtag.hashtagName)
                 .fetch();
     }
+
 }
