@@ -10,8 +10,9 @@ logging:
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/board
-    username: chris
-    password: 1234
+    username: postgres
+    password: ysun1030
+
 
   jpa:
     open-in-view: false

@@ -1,5 +1,6 @@
 package com.fastcampus.projectboard.domain;
 
+
 import lombok.Getter;
 import lombok.ToString;
 import org.springframework.data.annotation.CreatedBy;
