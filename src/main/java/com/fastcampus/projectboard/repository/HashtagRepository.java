@@ -4,6 +4,9 @@ import com.fastcampus.projectboard.domain.Hashtag;
 import com.fastcampus.projectboard.repository.querydsl.HashtagRepositoryCustom;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;
+
+import org.springframework.data.querydsl.binding.QuerydslBinderCustomizer;
+
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import java.util.List;

@@ -58,8 +58,7 @@ class ArticleServiceTest {
 
         // Then
         assertThat(articles).isEmpty();
-        then(hashtagRepository).shouldHaveNoInteractions();
-        then(articleRepository).shouldHaveNoInteractions();
+        then(articleRepository).should().findAll(pageable);
     }
 
     @DisplayName("검색어와 함께 게시글을 검색하면, 게시글 페이지를 반환한다.")
