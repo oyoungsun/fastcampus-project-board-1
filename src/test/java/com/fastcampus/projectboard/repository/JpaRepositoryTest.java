@@ -1,17 +1,13 @@
 package com.fastcampus.projectboard.repository;
 
-<<<<<<< Updated upstream
+
 import com.fastcampus.projectboard.config.JpaConfig;
-=======
->>>>>>> Stashed changes
 import com.fastcampus.projectboard.domain.Article;
 import com.fastcampus.projectboard.domain.ArticleComment;
 import com.fastcampus.projectboard.domain.Hashtag;
 import com.fastcampus.projectboard.domain.UserAccount;
-<<<<<<< Updated upstream
-=======
 import org.assertj.core.api.InstanceOfAssertFactories;
->>>>>>> Stashed changes
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -115,8 +111,6 @@ class JpaRepositoryTest {
         assertThat(articleRepository.count()).isEqualTo(previousArticleCount - 1);
         assertThat(articleCommentRepository.count()).isEqualTo(previousArticleCommentCount - deletedCommentsSize);
     }
-<<<<<<< Updated upstream
-=======
 
     @DisplayName("대댓글 조회 테스트")
     @Test
@@ -194,7 +188,7 @@ class JpaRepositoryTest {
         assertThat(hashtagNames).hasSize(19);
     }
 
->>>>>>> Stashed changes
+
     @DisplayName("[Querydsl] hashtag로 페이징된 게시글 검색하기")
     @Test
     void givenHashtagNamesAndPageable_whenQueryingArticles_thenReturnsArticlePage() {
